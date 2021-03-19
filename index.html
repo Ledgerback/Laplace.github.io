@@ -1,224 +1,159 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-      <!-- Required meta tags -->
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> 
-
-
-      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" >
-      <!--Google Font Roboto -->
-      <!-- <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> -->
-
-      <!-- Google Font Lato -->
-      <link href="http://fonts.googleapis.com/css?family=Lato&display=swap" rel='stylesheet' type='text/css'>
-
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" crossorigin="anonymous"></script>
-      <!-- FontAwesome CSS -->
-
-      
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Hello!</title>
     
-      <!-- Local CSS File -->
-      <link rel="stylesheet" href="Ledgerback.github.io/CKRS_css.css">
-      <link rel="shortcut icon" type="image/png" href="assets/Images/Laplace_Logo_PNG.png"/>
-      <title>Laplace Social Research and eLearning Hub</title>
-    </head>
-    <body style="background-color:grey;">
+    <!-- import the webpage's stylesheet -->
+    <!-- <link rel="stylesheet" href="/style.css"> -->
+    <link href= "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </head>  
+  <body class= "bg-white">
+        <!--
+      This example requires Tailwind CSS v2.0+ 
 
-    <!-- Header with navbar -->
+      This example requires some changes to your config:
 
- 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top border-bottom" style="background-color:white;">
-      <a class="navbar-brand" href="#">
-        <img src="assets/Images/Laplace_Logo_PNG.png" width="40" height="40" class="d-inline-block align-top" alt="">
-        Laplace
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Platform <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Job Board</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Categories</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Learn</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Experts</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Papers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pre-registration</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              
-              <i class="fas fa-ellipsis-h" style="color:black;"></i>
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Meetup & Events</a>
-              <a class="dropdown-item" href="#">Challenges</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Deals</a>
-              <a class="dropdown-item" href="#">Shop</a>
-              <a class="dropdown-item" href="#">Newsletter</a>
-              <a class="dropdown-item" href="#">Twitter</a>
-              <a class="dropdown-item" href="#">Contact us</a>
-              <a class="dropdown-item" href="#">For companies</a>
-              <a class="dropdown-item" href="#">Partner with us</a>
-              <a class="dropdown-item" href="#">Podcast</a>
+      ```
+      // tailwind.config.js
+      module.exports = {
+        // ...
+        plugins: [
+          // ...
+          require('@tailwindcss/forms'),
+        ]
+      }
+      ```
+    -->
+    <!-- Based on http://impactinvestor.io/ -->
+    <!-- Also review readbase at https://readbase.landen.co/-->
+    <div class="min-h-screen flex items-center justify-center bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-md w-full space-y-8">
+        <div>
+          <img class="mx-auto h-48 w-auto -mb-2" src="https://cdn.glitch.com/b76da433-1f0a-4cce-8bc1-fbbb42074590%2FLaplace_Logo_PNG.png?v=1615665374711" alt="Workflow">
+          <h4 class="mt-8 text-center font-medium text-sm" style="color:#f37021;">
+            Welcome to Laplace
+          </h4>
+          <h2 class="mt-4 text-center text-3xl font-extrabold text-gray-900">
+            Get the knowledge, training and tools to take back control of your digital life
+            <!--A space where you can learn to take control back in the digital society with a DIY community through courses, tutorials, and sharing.
+            Join a p2p "DIY learning" community of academics, tutors, teachers and students co-creating the knowledge and tools to solve socio-technical issues via alternative governance, technical and economic models.
+          -->
+          </h2>
+          <div class="mt-4 flex flex-col mx-auto justify-center  sm:flex-row sm:flex-wrap sm:mt-4 sm:space-x-2">
+            <div class="mt-2 flex items-center text-sm text-gray-500 bg-gray-600 rounded-md hover:bg-indigo-700 px-6 py-2" style="">
+              <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
+              </svg>
+              <p class="text-white font-medium "> Courses </p>
             </div>
-          </li>
-         
-        </ul>
-       
-        <button class="btn btn-outline-dark btn-sm mr-2" aria-haspopup="true" > Log in</button>
-        <button class="btn btn-outline-dark btn-sm mr-2" aria-haspopup="true"> Add paper</button>
-        <button class="btn btn-outline-dark btn-sm mr-2" aria-haspopup="true"> Add course</button>
-
-       
-
-      </div>
-    </nav>
-
-
-    <!-- End navbar -->
-
-    <div class="jumbotron" style="color:white;background-color:#f37021;">
-      <h1 class="display-4">Welcome to Laplace! </h1>
-      <p class="lead">
-        We are a multi-stakeholder social scholar and learner hub mobilizing citizens, teachers, students, tutors, technologists, course developers, and researchers together to positively transform eLearning and scientific discussion and output.
-      </p>
-      <hr class="my-4">
-      <h5>Laplace is currently under development! </h5>
-      <p> If you want to learn more, please read this page and sign up for the Ledgerback Substack Newsletter or if you want to pre-register as a member before Laplace is live, please click on the pre-registration link </p>
-      
-      <a class="btn btn-light btn-lg" href="https://docs.google.com/presentation/d/1AFoLhvdh4_SHMVjqVjPqs7FuNCLQAUIBCrvRqrOTjSA/edit?usp=sharing" role="button">Learn more</a>
-      <a class="btn btn-light btn-lg" href="https://ledgerback.substack.com/" role="button">Sign up for our newsletter</a> 
-      <a class="btn btn-light btn-lg" href="https://forms.gle/f4SeD2Eeju1RcBWY8" role="button">Pre-register</a> 
-    </div>
-
-    
-
-    <div class="container" style="">
-
-      <div class="row no-gutters mx-auto" style="margin-top:6rem;">
-        <!-- Refer to this Q&A for finding "align-self-start" https://stackoverflow.com/questions/49984241/bootstrap-4-navbar-fixed-top-and-other-sticky-top-elements -->
-        <div class="col-lg-3 sticky-top align-self-start mr-5" style="top:10px;">
-
-          <div class="sticky-top" style="top:0;">
-
-            <div class="card my-2 mr-1">
-              <div class="card-body">
-                <h6 class="card-title">About LedgerbackØDCRC</h6>
-                <hr class="my-4">
-                <p>  The Ledgerback Digital Commons Research Cooperative (LedgerbackØDCRC) is a nonprofit cooperative and p2p network for fostering collaboration between stakeholders and unifying the study of the internet and society (i.e., the network society) to advance towards a global technological commonwealth. </p>
-                <p> You can find out more about the LedgerbackØDCRC by following the links below: </p>
-                <ul class="list-bullets">
-                  <li class="mb-2"> <a href="http://www.ledgerback.coop/">Website</a> </li>
-                  <li class="mb-2"> <a href="https://twitter.com/ledgerback">Twitter</a> </li>
-                  <li class="mb-2"> <a href="mailto:ledgerback@gmail.com">Email</a> </li>
-                </ul>              
-              </div>
+            <div class="mt-2 flex items-center text-sm text-gray-500 bg-gray-600 rounded-md hover:bg-indigo-700 px-6 py-2">
+              <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
+                <path d="M7 3a1 1 0 000 2h6a1 1 0 100-2H7zM4 7a1 1 0 011-1h10a1 1 0 110 2H5a1 1 0 01-1-1zM2 11a2 2 0 012-2h12a2 2 0 012 2v4a2 2 0 01-2 2H4a2 2 0 01-2-2v-4z" />
+              </svg>
+              <p class="text-white font-medium"> Tutorials </p>
+            </div>
+            <div class="mt-2 flex items-center text-sm text-gray-500 bg-gray-600 rounded-md hover:bg-indigo-700 px-6 py-2">
+              <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-8-3a1 1 0 00-.867.5 1 1 0 11-1.731-1A3 3 0 0113 8a3.001 3.001 0 01-2 2.83V11a1 1 0 11-2 0v-1a1 1 0 011-1 1 1 0 100-2zm0 8a1 1 0 100-2 1 1 0 000 2z" clip-rule="evenodd" />
+              </svg>
+              <p class="text-white font-medium"> Q&A </p>
+            </div>
+            <div class="mt-2 flex items-center text-sm text-gray-500 bg-gray-600 rounded-md hover:bg-indigo-700 px-6 py-2">
+              <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd" d="M9 3a1 1 0 012 0v5.5a.5.5 0 001 0V4a1 1 0 112 0v4.5a.5.5 0 001 0V6a1 1 0 112 0v5a7 7 0 11-14 0V9a1 1 0 012 0v2.5a.5.5 0 001 0V4a1 1 0 012 0v4.5a.5.5 0 001 0V3z" clip-rule="evenodd" />
+              </svg>
+              <p class="text-white font-medium"> Tutoring </p>
+            </div>
+            <div class="mt-2 flex items-center text-sm text-gray-500 bg-gray-600 rounded-md hover:bg-indigo-700 px-6 py-2">
+            
+              <svg  class="flex-shrink-0 mr-1.5 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor">
+                <path d="M13 6a3 3 0 11-6 0 3 3 0 016 0zM18 8a2 2 0 11-4 0 2 2 0 014 0zM14 15a4 4 0 00-8 0v3h8v-3zM6 8a2 2 0 11-4 0 2 2 0 014 0zM16 18v-3a5.972 5.972 0 00-.75-2.906A3.005 3.005 0 0119 15v3h-3zM4.75 12.094A5.973 5.973 0 004 15v3H1v-3a3 3 0 013.75-2.906z" />
+              </svg>
+              <p class="text-white font-medium"> Community </p>
             </div>
           </div>
+          <p class="mt-4 font-medium text-center text-md text-indigo-600" style="color:#f37021;">
+            Subscribe below to get notified when Laplace launches!
+          </p>
         </div>
-
-        <div class="col-lg-8 sticky-top " data-spy="scroll" style="top:10;background-color:white;">
-          <div class="border rounded justify-content-between mb-4">
-            <h1 class="display-4"> Mission </h1>
-            <p class="lead">Our mission is to:  </p>
-              <ol class="lead">
-                <li class="mb-2"> mobilize citizens, teachers, students, tutors, course developers, and researchers together to positively transform and interconnect online learning and discussions about metascience (funding, collaboration, open science, publishing, etc.),  </li> 
-                <li class="mb-2"> address issues and problems we have identified in educational technology and scholarly discussion (especailly around metascience) to rebalance the relationships between stakeholders and between technology and stakeholders, and  </li>
-                <li class="mb-2"> positively transform both areas by combining social constructivism, platform cooperativism, mechanism design and Web 3.0 technologies </li>
-              </ol>
-            <p class="lead"> For problem statements motivating us, please refer to this non-exhaustive list: </p>
-            <ul class="list-bullets">
-              <li class="mb-2"> <a href="https://fathom.network/blog/creating-an-alternative-edtech"> Creating an alternative ed-tech</a></li>
-            </ul>
-          </div>
-
-          <div class="border-bottom rounded justify-content-between mb-4">
-            <h1 class="display-4"> Values </h1>
-            <p class="lead">Our values are still under development but they do embody similar values to those held by the LedgerbackØDCRC such as
-            collaboration, open access, and user autonomy. </p>
-              
-          </div>
-
-          <div class="border-bottom rounded justify-content-between mb-4">
-            <h1 class="display-4"> Models </h1>
-           
-            <p class="lead"> Our model is divided into three areas: </p>
-            <ol class="lead"> 
-              <li class="mb-2"> Cooperative Model </li>
-              <li class="mb-2"> Social Model </li>
-              <li class="mb-2"> Economic Model </li>
-              <li class="mb-2"> Technology Model </li>
-            </ol>
-            <p class="lead"> For more information and our current thoughts, please refer to our slides on the <a href="https://docs.google.com/presentation/d/1AFoLhvdh4_SHMVjqVjPqs7FuNCLQAUIBCrvRqrOTjSA/edit?usp=sharing">Laplace Concept</a>.</p>
-            
-            <h4 class="display-4"> Cooperative Model </h4>
-            <p class="lead">As stated above, we plan to implement Laplace as a multi-stakeholder cooperative that gives a voice to citizens, students, teachers, researchers, technologists, tutors, and course developers. We believe a cooperative is the apporpriate model to engage these stakeholders because the interaction of these stakehodlers will create a collective good (knowledge commons) while taking into account the individual interests and preferences of each stakeholder. Additionally, we do not believe that any area in the knowledge commons (from ideation to deliverable) is truly separate and thus, each stakeholder's opinion is necessary to reach resolutions that benefit the collective overall. </p>
-            <p class="lead"> Lastly, a cooperative ensures that the members can determine how accrued value is redistributed and that the people who work on the platform have a say over how they work. </p>
-            <p class="lead"> For more information on cooperatives, please refer to the button below </p>
-            <a href="https://www.youtube.com/watch?v=90FL_bBE4mw" class="btn btn-light btn-lg"> Co-op Info </a>
-           
-            <h4> Social Model </h4>
-            <p class="lead"> Our social model is based on social constructivism and on how new scientiffic breakthroughs occur. In both circumstances, it is the interaciton betwene individuals concerning knwoedlge and building off pre-existing knowledge through association that leads to the creation and expansion of knowledge. Thus, we have chosen to make Laplace a social learning and scholarly hub to encourage interaction among users and thus lead to an expansion and deeper understanding of knowledge. In this model, we utilize both traditional categories and user-created tags to group and find knowledge and allow users to customize existing knowledge products to better meet their own needs and help others expand their horizons. </p>
-            
-            <h4> Economic Model </h4>
-            <p class="font-italic"> This section is under development. </p> 
-
-            <h4> Technology Model </h4>
-            <p class="font-italic"> This section is under development. </p> 
-              
-          </div>
-
-          <div class="border-bottom rounded justify-content-between mb-4">
-           <h1 class="display-4"> Project Info </h1>
-           <p class="lead">Currently, we are at the ideating and research phase and working towards a minimal viable product (MVP) for Laplace. We may also conduct a crowdfunding campaign in the future.</p>
-            
-          </div>
-
-          <div class=" border-bottom rounded justify-content-between mb-4">
-           <h1 class="display-4"> Get Involved </h1>
-           <p class="lead">You can get involved with Laplace by pre-registering (this helps us understand the amount of interest in Laplace), helping us research new mechanisms and technologies that can be implemented for social learning and scholarly discussion, mentioning Laplace to your friends and family, learning about problems and issues that plague both areas and discussing them with us, and building the MVP. </p>
-            
-          </div>
-
-          <div class=" rounded justify-content-between mb-4">
-           <h1 class="display-4"> Contact us </h1>
-           <p class="lead">You can get in contact with us by sending an <a href="mailto:ledgerback@gmail.com"> email </a> or hitting us up on <a href="https://twitter.com/ledgerback"> Twitter. </p>
-            
-          </div>
+        <iframe src="https://ledgerback.substack.com/embed" width="480" height="320" style="border:1px solid #EEE; background:white;" frameborder="0" scrolling="no"></iframe>
+        <p class="text-gray-700 font-medium mt-4 text-center">
+          Are you a researcher, teacher or tutor? Send an email to <a href="mailto:ledgerback@gmail.com" style="color:#f37021;"> Ledgerback Cooperative</a> if you would like your own profile page and offer courses or tutoring on our platform.
+        </p>
       </div>
+    </div>
+    <!--
+    <div class= "flex flex-col justify-center mx-auto w-full my-48">
+      <div class= "place-content-center items-center mx-auto -mb-4">
+        <img src="https://cdn.glitch.com/b76da433-1f0a-4cce-8bc1-fbbb42074590%2FLaplace_Logo_PNG.png?v=1615665374711" width="100px" height="100px">  
       </div>
-
-
-
-  <!-- Scripts -->
-  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-<!-- Always remember to call the above files first before calling the bootstrap.min.js file -->
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-</body>
+      <div class="text-center justify-center items-center">
+        <h6 class="font-semibold text-sm text-gray-400" >Welcome to Laplace</h6>
+        <h3 class="font-bold text-lg mb-4 mt-2 w-auto">
+          Join a sel-learning community
+          Join a community learning the knowledge and tools to tackle pressing sociotechincal issues <br> and transorm society into a global technological commonwealth  
+          <br>
+          Search and discover courses, tutors and teachers rom around the world on how to tackle pressing socio-technical issues 
+        </h3>
+      </div>
+      <div class="mt-1 flex flex-col  mx-auto sm:flex-row sm:flex-wrap sm:mt-0 sm:space-x-6">
+        <div class="mt-2 flex items-center text-sm text-gray-500 bg-purple-400 hover:bg-purple-700 ">
+          <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd" />
+            <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
+          </svg>
+          <p class="text-white"> Courses </p>
+        </div>
+        <div class="mt-2 flex items-center text-sm text-gray-500 bg-blue-400">
+          <svg class="flex-shrink-0 mr-1.5 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 20 20" fill="currentColor" aria-hidden="true">
+            <path fill-rule="evenodd" d="M6 6V5a3 3 0 013-3h2a3 3 0 013 3v1h2a2 2 0 012 2v3.57A22.952 22.952 0 0110 13a22.95 22.95 0 01-8-1.43V8a2 2 0 012-2h2zm2-1a1 1 0 011-1h2a1 1 0 011 1v1H8V5zm1 5a1 1 0 011-1h.01a1 1 0 110 2H10a1 1 0 01-1-1z" clip-rule="evenodd" />
+            <path d="M2 13.692V16a2 2 0 002 2h12a2 2 0 002-2v-2.308A24.974 24.974 0 0110 15c-2.796 0-5.487-.46-8-1.308z" />
+          </svg>
+          Courses
+        </div>
+      </div>
+      
+      
+      <div class="inline-flex space-x-4 ...">
+        <div class="flex-1 flex-row">
+          <span class ="inline flex flex-row">
+            <div class="mt-2 flex items-center text-sm text-gray-500">
+              <svg xmlns="http://www.w3.org/2000/svg" viewbox="0 0 80 80" fill="currentColor" class="transform scale-100">
+                <path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z" />
+              </svg>
+            </div>
+            <i class="fa fa-chalkboard-teacher"></i>
+            <p>
+               Courses
+            </p>
+          </span>
+        </div>
+        <div class="flex-1 ...">2</div>
+        <div class="flex-1 ...">3</div>
+      </div>
+      <span class="inline-grid grid-cols-3 gap-x-4">
+        <span class="bg-gray-200 px-4">
+         
+         
+          <i class="fas fa-school" style="color:black;"></i> 
+        </span>
+        <span>1</span>
+        <span>1</span>
+      </span>
+      <p>
+        I'm your cool new webpage. Made with <a href="https://glitch.com">Glitch</a>!
+      </p>
+    </div>
+    -->
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js" defer></script>
+  </body>
+</html>
